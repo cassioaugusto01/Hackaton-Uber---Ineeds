@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ineed - Carros adaptados para deficientes físicos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <p>iNeeds</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /header -->
+    <hr>
+    <!-- formulario de login -->
+    <div class="container my-5">
+            <div class="row">
+              <div class="col-md-6 mx-auto">
+                <form id="formulario" action="escolher-cadeira.html" method="POST">
+                <div class="form-group">
+                  <input type="text" id="origem" class="form-control" required>
+                  <label class="form-control-placeholder" for="origem">Seu nome</label>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="destino" class="form-control" required>
+                  <label class="form-control-placeholder" for="destino">Seu e-mail</label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+    <!-- Botão -->      
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Entrar</button>
+          <hr>
+          <form id="formulario2" action="cadastro-escolher-cadeira.html" method="POST">
+             <button type="submit" class="btn btn-primary btn-lg btn-block">Quero me cadastrar</button>
+          </form>
+          <hr>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Entrar com Facebook</button>
+    <!-- JavaScript -->
+        </form>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
